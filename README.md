@@ -24,6 +24,28 @@ The program includes the following components:
 4. **Post-Silicon & Deliverables**
    - Tape-out submission package: GDSII files, documentation, timing reports, scripts.  
    - Embedded applications, testbenches, portfolios, post-silicon validation.
+# VSD Hardware Design Program
+
+Welcome to my journey through the **VSD-HDP (VLSI System Design - Hardware Design Program)**!  
+Below are links to my day-wise progress, learnings, and project files.
+
+---
+
+##  Detailed Logs by Day
+
+| Week   | Topics Covered                                                     | Status   |
+|-------|-------------------------------------------------------------------|----------|
+| Week 0 | [Tools Installation](https://github.com/srividya-09/VSD-RISC-V-CHIP-TAPEOUT/tree/main/WEEK0) | ✅ Done  |
+| Week 1 |                                                                    |   |
+| Week 2 |                                                                    |   |
+| Week 3 |                                                                    |   |
+| Week 4 |                                                                    |   |
+| Week 5 |                                                                    |   |
+| Week 6 |                                                                    |   |
+| Week 7 |                                                                    |   |
+| Week 8 |                                                                     |  |
+| Week 9 |                                                                     |   |
+| Week 10|                                                                     |   |
 
 ---
 
