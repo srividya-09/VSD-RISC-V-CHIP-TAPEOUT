@@ -163,6 +163,22 @@ show
 <img width="2756" height="1074" alt="image" src="https://github.com/user-attachments/assets/ec67d4af-bb1a-4f14-b22e-1c02c75fdf6d" />
 <img width="2730" height="1382" alt="image" src="https://github.com/user-attachments/assets/9fcdfc7c-95c4-4d82-b93f-9b7a249688fa" />
 
+### lab2 
+<img width="2202" height="550" alt="image" src="https://github.com/user-attachments/assets/50685d99-0e54-4106-ac1a-79411b6b595e" />
+
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog opt_check2.v 
+synth -top opt_check2
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+
+<img width="2662" height="1280" alt="image" src="https://github.com/user-attachments/assets/3661d56a-46d9-491e-a28e-0171324f135e" />
+<img width="2752" height="1294" alt="image" src="https://github.com/user-attachments/assets/a7b03078-007e-483e-a4bd-9b85ab7a1348" />
+
+
+
 
 
 
