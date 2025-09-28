@@ -250,6 +250,25 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 <img width="2754" height="1464" alt="image" src="https://github.com/user-attachments/assets/70f38f0a-6ccc-48fd-bf48-2c528be4777a" />
 
+### Sequential Logic Optimization examples
+### lab1
+<img width="2228" height="782" alt="image" src="https://github.com/user-attachments/assets/db5617d0-5ac4-405f-8eaa-fe160344a309" />
+<img width="2360" height="306" alt="image" src="https://github.com/user-attachments/assets/948f2975-fa99-404b-87c2-e46cb3b97181" />
+<img width="2744" height="1028" alt="image" src="https://github.com/user-attachments/assets/8a1b0012-ad1a-4aea-a837-506835c79307" />
+
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const1.v
+synth -top dff_const1
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+<img width="2752" height="1364" alt="image" src="https://github.com/user-attachments/assets/68fc206a-b1d2-4f3a-b9f9-d6e1cdcc215d" />
+
+### lab2
+
+
+
 
 
 
