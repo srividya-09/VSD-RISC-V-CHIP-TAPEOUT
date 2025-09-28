@@ -51,6 +51,12 @@ No submodules are preserved.
 
 flatten
 write_verilog -noattr multiple_modules_flat.v
+<img width="2408" height="706" alt="image" src="https://github.com/user-attachments/assets/1b568e1e-c0ea-4e70-85c0-895d4422e9b6" />
+
+<img width="2722" height="1527" alt="Screenshot 2025-09-28 123014" src="https://github.com/user-attachments/assets/e57141bb-26dd-4ded-a221-0238b434c9f3" />
+<img width="2746" height="1526" alt="image" src="https://github.com/user-attachments/assets/be0d4c2a-07ea-4c5a-83e3-1097f2f94a1b" />
+
+
 
 
 
