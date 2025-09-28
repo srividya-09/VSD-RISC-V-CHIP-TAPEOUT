@@ -63,6 +63,13 @@ write_verilog -noattr multiple_modules_flat.v
 <img width="2744" height="1496" alt="image" src="https://github.com/user-attachments/assets/5b8dd36b-7291-4b41-8c9b-356a2e8830cb" />
 <img width="2746" height="1544" alt="image" src="https://github.com/user-attachments/assets/62312731-ab2f-454c-99ce-475d15573f03" />
 
+## D Flip-Flop with Synchronous Reset
+<img width="2492" height="1376" alt="image" src="https://github.com/user-attachments/assets/d3a31f67-3688-4879-80b7-05b4fc49330d" />
+<img width="2464" height="188" alt="image" src="https://github.com/user-attachments/assets/ea6ea48e-369d-4ebc-8926-84f5f8aa1e45" />
+<img width="2746" height="1512" alt="image" src="https://github.com/user-attachments/assets/72e18fa2-907d-42e3-ad9d-4d9eb72f611a" />
+
+
+
 
 
 
