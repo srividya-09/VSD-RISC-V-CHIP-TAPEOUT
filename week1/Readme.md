@@ -353,6 +353,24 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 <img width="2752" height="1336" alt="image" src="https://github.com/user-attachments/assets/50dcc48f-5f73-412c-879d-183b4c40d8ca" />
 
+### lab7 
+<img width="2220" height="784" alt="image" src="https://github.com/user-attachments/assets/23b2f352-0480-4c35-8a39-a57e803628a1" />
+
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog counter_opt2.v
+synth -top counter_opt
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+
+<img width="1738" height="868" alt="image" src="https://github.com/user-attachments/assets/dd453c25-24b3-4553-8ea9-5d900c4c9860" />
+
+<img width="2758" height="1324" alt="image" src="https://github.com/user-attachments/assets/6d05ac28-8e48-4c59-8880-00d71fc1536c" />
+
+
+
+
 
 
 
