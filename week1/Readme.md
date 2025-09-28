@@ -214,6 +214,9 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 flatten
 write_verilog -noattr multiple_module_opt_flat.v
 
+<img width="2686" height="1382" alt="image" src="https://github.com/user-attachments/assets/5b59ad61-a372-4114-96c2-c05545a726ac" />
+
+
 ### Phase 2: Optimize the flattened netlist
 yosys
 read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
@@ -222,6 +225,34 @@ synth -top multiple_module_opt
 opt_clean -purge
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
+
+<img width="2734" height="1376" alt="image" src="https://github.com/user-attachments/assets/ae5c84f9-36e8-4b99-ac6c-0a941c4a3e61" />
+
+### lab6 - multiple_module_opt2
+<img width="2226" height="1074" alt="image" src="https://github.com/user-attachments/assets/2f5cf546-68a5-4f6a-936b-e330d58c3a36" />
+### Phase 1: Flatten the hierarchical RTL design
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_module_opt2.v
+synth -top multiple_module_opt2
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+flatten
+write_verilog -noattr multiple_module_opt2_flat.v
+<img width="2730" height="1384" alt="image" src="https://github.com/user-attachments/assets/c51c658f-25e8-446a-89c8-cd0d3e693da6" />
+
+### Phase 2: Optimize the flattened netlist
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_module_opt2_flat.v
+synth -top multiple_module_opt2
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+<img width="2754" height="1464" alt="image" src="https://github.com/user-attachments/assets/70f38f0a-6ccc-48fd-bf48-2c528be4777a" />
+
+
+
+
 
 
 
