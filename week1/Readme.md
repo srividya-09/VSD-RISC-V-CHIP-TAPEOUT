@@ -309,6 +309,56 @@ show
 
 <img width="2740" height="1322" alt="image" src="https://github.com/user-attachments/assets/10626c17-6d26-448b-9545-f7d5edec4e94" />
 
+### lab5 
+<img width="2212" height="974" alt="image" src="https://github.com/user-attachments/assets/b15e336d-e865-4289-8035-e02694e480d1" />
+<img width="2360" height="444" alt="image" src="https://github.com/user-attachments/assets/16702b13-f1c0-4e00-85d3-f829ac1b2305" />
+<img width="2748" height="1006" alt="image" src="https://github.com/user-attachments/assets/f8427013-e5e1-418f-adca-6129f4ed5818" />
+
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const5.v
+synth -top dff_const5
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+
+<img width="2746" height="1328" alt="image" src="https://github.com/user-attachments/assets/b35b7690-3371-4604-8ec9-9a3e235c3074" />
+
+### lab6 Unused outputs
+<img width="2214" height="724" alt="image" src="https://github.com/user-attachments/assets/40f7d191-ddfa-48e0-930b-9809a6c24ebf" />
+<img width="2312" height="448" alt="image" src="https://github.com/user-attachments/assets/29ec842a-9912-48e0-91cd-0f9ac7a3b51d" />
+<img width="2732" height="1086" alt="image" src="https://github.com/user-attachments/assets/099650a3-f4f8-466f-8bf8-b6c8532641b5" />
+
+
+### Synthesis Result w/o opt_clean switch
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog counter_opt.v
+synth -top counter_opt
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+<img width="2044" height="720" alt="image" src="https://github.com/user-attachments/assets/91dc5bb0-6335-47e6-a2bf-dfcd55356b35" />
+
+<img width="2744" height="1368" alt="image" src="https://github.com/user-attachments/assets/68241ae6-fa9d-46b7-bcb8-2314a0a1b53d" />
+
+Synthesis Result with opt_clean switch
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog counter_opt.v
+synth -top counter_opt
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+<img width="2752" height="1336" alt="image" src="https://github.com/user-attachments/assets/50dcc48f-5f73-412c-879d-183b4c40d8ca" />
+
+
+
+
+
+
+
 
 
 
