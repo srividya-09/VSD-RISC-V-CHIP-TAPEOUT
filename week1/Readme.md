@@ -386,6 +386,74 @@ write_verilog -noattr ternary_operator_mux_net.v
 <img width="2200" height="1230" alt="image" src="https://github.com/user-attachments/assets/6179f310-242a-4c27-ba29-7021bb338141" />
 
 ### GLS of Ternary Operator MUX
+iverilog ../my_lib/verilog_model/primitives.v  ../my_lib/verilog_model/sky130_fd_sc_hd.v ternary_operator_mux_net.v tb_ternary_operator_mux.v
+./a.out
+gtkwave tb_ternary_operator_mux.vcd
+
+<img width="2764" height="478" alt="image" src="https://github.com/user-attachments/assets/25512132-0b91-42ac-b132-e07e1cb837f9" />
+<img width="2742" height="1068" alt="image" src="https://github.com/user-attachments/assets/f0ea3af8-d966-4688-9703-8fadb230ea3d" />
+
+### Synthesis of Bad MUX design
+<img width="2192" height="640" alt="image" src="https://github.com/user-attachments/assets/2e7f0bcc-5a4f-4514-bedc-db30952bc2ef" />
+<img width="2624" height="450" alt="image" src="https://github.com/user-attachments/assets/41613646-99e6-4f88-a27e-5606788a2953" />
+<img width="2296" height="1056" alt="image" src="https://github.com/user-attachments/assets/0ea82df0-e4e5-4fab-9fed-67762c41e5b2" />
+
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog bad_mux.v
+synth -top bad_mux
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+write_verilog -noattr bad_mux_net.v
+
+<img width="2754" height="1328" alt="image" src="https://github.com/user-attachments/assets/8515200b-9da9-448f-9afe-bd1d35c08de5" />
+<img width="2202" height="1130" alt="image" src="https://github.com/user-attachments/assets/e62d6f5c-9001-43a8-9165-71d1d111f209" />
+
+GLS of Bad MUX design
+<img width="2766" height="516" alt="image" src="https://github.com/user-attachments/assets/6b4cc948-1401-4e6b-88f8-d03b2894163e" />
+<img width="2476" height="1154" alt="image" src="https://github.com/user-attachments/assets/d945ba66-00a4-4ba6-9bd6-5b4a4f11fa1f" />
+
+### Synthesis-Simulation Mismatch of Bad MUX design
+
+### Synthesis of blocking_caveat design
+<img width="2222" height="548" alt="image" src="https://github.com/user-attachments/assets/7b614192-2992-4d9a-94ba-b6cb00c1a7f2" />
+### RTL simulation
+iverilog blocking_caveat.v tb_blocking_caveat.v
+./a.out
+gtkwave tb_blocking_caveat.vcd
+<img width="2748" height="1148" alt="image" src="https://github.com/user-attachments/assets/bc475790-a0d7-484e-84c6-2d18f0bdeb0d" />
+
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog blocking_caveat.v
+synth -top blocking_caveat
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+write_verilog -noattr blocking_caveat_net.v
+
+<img width="2740" height="1450" alt="image" src="https://github.com/user-attachments/assets/46dff57b-8735-4423-a0b6-f1f574cf1a00" />
+
+### GLS of blocking_caveat design
+iverilog ../my_lib/verilog_model/primitives.v  ../my_lib/verilog_model/sky130_fd_sc_hd.v blocking_caveat_net.v tb_blocking_caveat.v
+./a.out
+gtkwave tb_blocking_caveat.vcd
+<img width="2748" height="988" alt="image" src="https://github.com/user-attachments/assets/a468f9e6-fb23-40b6-9610-c92027cafd84" />
+
+### Synthesis-Simulation Mismatch of blocking_caveat design
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
