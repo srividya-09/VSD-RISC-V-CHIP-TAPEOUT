@@ -56,6 +56,14 @@ write_verilog -noattr multiple_modules_flat.v
 <img width="2722" height="1527" alt="Screenshot 2025-09-28 123014" src="https://github.com/user-attachments/assets/e57141bb-26dd-4ded-a221-0238b434c9f3" />
 <img width="2746" height="1526" alt="image" src="https://github.com/user-attachments/assets/be0d4c2a-07ea-4c5a-83e3-1097f2f94a1b" />
 
+## Why Do We Use Flops? (To Avoid Glitches)
+<img width="2742" height="1506" alt="image" src="https://github.com/user-attachments/assets/5ded65ff-3b9c-47d4-82bf-3948b47ca3c3" />
+
+## D Flip-Flop with Asynchronous Reset
+<img width="2744" height="1496" alt="image" src="https://github.com/user-attachments/assets/5b8dd36b-7291-4b41-8c9b-356a2e8830cb" />
+
+
+
 
 
 
