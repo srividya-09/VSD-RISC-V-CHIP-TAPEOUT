@@ -119,7 +119,61 @@ show
 <img width="2754" height="1238" alt="image" src="https://github.com/user-attachments/assets/7ce04472-8024-4010-becb-b42a15ce66d1" />
 
 ## Interesting optimisations
+### part1
 <img width="2678" height="1494" alt="image" src="https://github.com/user-attachments/assets/af57d94e-bdc8-4fcf-9c65-e8583e1b9efa" />
+image need to be added 
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog mult_2.v
+synth -top mul2
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib # no need to do this step becoz no cells are used #
+show
+write_verilog -noattr mult2_net.v
+
+<img width="2540" height="1196" alt="image" src="https://github.com/user-attachments/assets/d9375542-ea7b-4751-9ecb-c8c3ecff2a85" />
+<img width="2764" height="1426" alt="image" src="https://github.com/user-attachments/assets/8dea3781-e3ef-4990-a600-cd1c0cc9c85f" />
+<img width="2736" height="1500" alt="image" src="https://github.com/user-attachments/assets/153a439e-974b-4ff5-b9d1-76866d51cf82" />
+
+### part 2
+<img width="2224" height="1310" alt="image" src="https://github.com/user-attachments/assets/1044a44d-4d2c-4365-a33f-f5c8b13297d0" />
+yosy
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog mult_8.v
+synth -top mult8
+show
+write_verilog -noattr mult8_net.v
+
+<img width="2090" height="1142" alt="image" src="https://github.com/user-attachments/assets/90a17c25-3b77-410f-9557-0deea4e5c2e1" />
+<img width="2128" height="604" alt="image" src="https://github.com/user-attachments/assets/96014843-4d85-4b99-9bbe-2af4b37dda03" />
+<img width="2756" height="1262" alt="image" src="https://github.com/user-attachments/assets/930d586c-2d1b-4a93-8f47-758eade10091" />
+
+Day3 
+### combinational logic optimizations
+### lab1
+<img width="2210" height="656" alt="image" src="https://github.com/user-attachments/assets/289b2365-7107-4f5f-bebe-bacffc43582e" />
+image need to added
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog opt_check.v 
+synth -top opt_check
+opt_clean -purge # Removes unused or redundant logic #
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+
+<img width="2756" height="1074" alt="image" src="https://github.com/user-attachments/assets/ec67d4af-bb1a-4f14-b22e-1c02c75fdf6d" />
+<img width="2730" height="1382" alt="image" src="https://github.com/user-attachments/assets/9fcdfc7c-95c4-4d82-b93f-9b7a249688fa" />
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
