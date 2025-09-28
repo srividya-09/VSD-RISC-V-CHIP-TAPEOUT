@@ -11,6 +11,12 @@
 ## Yosys Synthesis Steps for good_mux
 
 <img width="2544" height="1372" alt="image" src="https://github.com/user-attachments/assets/2551f1a4-c8ca-4576-bb63-7f6d74969ae6" />
+<img width="2739" height="902" alt="Screenshot 2025-09-28 111136" src="https://github.com/user-attachments/assets/21c41106-bc19-4731-b6a6-5448849fb733" />
+<img width="2759" height="578" alt="Screenshot 2025-09-28 111102" src="https://github.com/user-attachments/assets/3abde22e-0870-4db5-979b-0fa4a70b02a1" />
+<img width="2072" height="1457" alt="Screenshot 2025-09-28 110932" src="https://github.com/user-attachments/assets/5faf45a7-1f02-4743-a259-edeb1e761b0e" />
+<img width="2731" height="1532" alt="Screenshot 2025-09-28 111409" src="https://github.com/user-attachments/assets/20298e45-274b-479d-a550-0b00f0bafcb0" />
+
+
 
 
 ##Liberty format
