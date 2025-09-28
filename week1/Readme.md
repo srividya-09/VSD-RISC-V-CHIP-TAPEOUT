@@ -61,6 +61,8 @@ write_verilog -noattr multiple_modules_flat.v
 
 ## D Flip-Flop with Asynchronous Reset
 <img width="2744" height="1496" alt="image" src="https://github.com/user-attachments/assets/5b8dd36b-7291-4b41-8c9b-356a2e8830cb" />
+<img width="2746" height="1544" alt="image" src="https://github.com/user-attachments/assets/62312731-ab2f-454c-99ce-475d15573f03" />
+
 
 
 
