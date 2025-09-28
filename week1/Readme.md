@@ -293,6 +293,23 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 <img width="2756" height="1360" alt="image" src="https://github.com/user-attachments/assets/91a75c69-35ed-439b-b6c5-f341f43e0769" />
 
+### lab4 
+
+<img width="2184" height="846" alt="image" src="https://github.com/user-attachments/assets/eccac05d-4d90-4078-ba45-9155731dcfd9" />
+<img width="2336" height="298" alt="image" src="https://github.com/user-attachments/assets/a4c6b4cd-ed20-45a8-a87c-c5de30aab36e" />
+<img width="2750" height="908" alt="image" src="https://github.com/user-attachments/assets/77367295-f9b3-4454-94e2-cfd7e6dbdb71" />
+
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const4.v
+synth -top dff_const4
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+
+<img width="2740" height="1322" alt="image" src="https://github.com/user-attachments/assets/10626c17-6d26-448b-9545-f7d5edec4e94" />
+
+
 
 
 
