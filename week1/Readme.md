@@ -82,6 +82,21 @@ show
 <img width="2724" height="1298" alt="image" src="https://github.com/user-attachments/assets/17000e4b-840a-494a-a21d-4b4e14c5e149" />
 <img width="2730" height="1500" alt="image" src="https://github.com/user-attachments/assets/32cef819-a7f0-45b9-ac83-cf31c03f8695" />
 
+## Synthesis of D Flip-Flop with Asynchronous Reset
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_asyncres.v 
+synth -top dff_asyncres
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+
+<img width="2744" height="1122" alt="image" src="https://github.com/user-attachments/assets/0a855fb0-b825-4203-8766-ec208e9ff9f6" />
+<img width="2752" height="1506" alt="image" src="https://github.com/user-attachments/assets/addcf5ee-e114-4aa5-9ce6-f89f13dad240" />
+
+
+
+
 
 
 
