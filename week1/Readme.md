@@ -368,6 +368,27 @@ show
 
 <img width="2758" height="1324" alt="image" src="https://github.com/user-attachments/assets/6d05ac28-8e48-4c59-8880-00d71fc1536c" />
 
+## day4
+
+<img width="2716" height="448" alt="image" src="https://github.com/user-attachments/assets/0d0a2b6b-9a1c-4b0f-bc1d-a8d42e081498" />
+
+<img width="2752" height="1094" alt="image" src="https://github.com/user-attachments/assets/d9324824-3aa4-44ea-be0b-48a2a589ec61" />
+
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog ternary_operator_mux.v
+synth -top ternary_operator_mux
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+write_verilog -noattr ternary_operator_mux_net.v
+
+<img width="2756" height="1356" alt="image" src="https://github.com/user-attachments/assets/8c41e7f4-8e61-416d-87f4-031120eb20b3" />
+<img width="2200" height="1230" alt="image" src="https://github.com/user-attachments/assets/6179f310-242a-4c27-ba29-7021bb338141" />
+
+### GLS of Ternary Operator MUX
+
+
+
 
 
 
