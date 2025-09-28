@@ -68,6 +68,24 @@ write_verilog -noattr multiple_modules_flat.v
 <img width="2464" height="188" alt="image" src="https://github.com/user-attachments/assets/ea6ea48e-369d-4ebc-8926-84f5f8aa1e45" />
 <img width="2746" height="1512" alt="image" src="https://github.com/user-attachments/assets/72e18fa2-907d-42e3-ad9d-4d9eb72f611a" />
 
+## D Flip-Flop with Both Asynchronous and Synchronous Reset
+<img width="2748" height="1494" alt="image" src="https://github.com/user-attachments/assets/31bf4b69-509c-4bc7-bf17-0412c1958cac" />
+
+## Synthesis of D Flip-Flop with Asynchronous set
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_async_set.v
+synth -top dff_async_set
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+<img width="2724" height="1298" alt="image" src="https://github.com/user-attachments/assets/17000e4b-840a-494a-a21d-4b4e14c5e149" />
+<img width="2730" height="1500" alt="image" src="https://github.com/user-attachments/assets/32cef819-a7f0-45b9-ac83-cf31c03f8695" />
+
+
+
+
+
 
 
 
