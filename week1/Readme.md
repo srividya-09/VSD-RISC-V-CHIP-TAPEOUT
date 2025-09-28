@@ -177,6 +177,20 @@ show
 <img width="2662" height="1280" alt="image" src="https://github.com/user-attachments/assets/3661d56a-46d9-491e-a28e-0171324f135e" />
 <img width="2752" height="1294" alt="image" src="https://github.com/user-attachments/assets/a7b03078-007e-483e-a4bd-9b85ab7a1348" />
 
+### lab3 
+<img width="2214" height="532" alt="image" src="https://github.com/user-attachments/assets/c013b1f6-2915-483d-b5d3-96be0f714c92" />
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog opt_check3.v 
+synth -top opt_check3
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+<img width="2740" height="1358" alt="image" src="https://github.com/user-attachments/assets/9a318afb-aa13-49f1-ae6f-e39036105831" />
+![Uploading image.png…]()
+
+
+
 
 
 
