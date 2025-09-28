@@ -94,6 +94,39 @@ show
 <img width="2744" height="1122" alt="image" src="https://github.com/user-attachments/assets/0a855fb0-b825-4203-8766-ec208e9ff9f6" />
 <img width="2752" height="1506" alt="image" src="https://github.com/user-attachments/assets/addcf5ee-e114-4aa5-9ce6-f89f13dad240" />
 
+## Synthesis of D Flip-Flop with Synchronous Reset
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_syncres.v 
+synth -top dff_syncres
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+
+<img width="2376" height="730" alt="image" src="https://github.com/user-attachments/assets/fb10646c-3053-4d94-8e4d-3c13863b6ea4" />
+<img width="2750" height="1332" alt="image" src="https://github.com/user-attachments/assets/8424dfef-6f67-4807-88e3-7908950be0f5" />
+
+## Synthesis of D Flip-Flop with Both Asynchronous and Synchronous Reset
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_asyncres_syncres.v
+synth -top dff_asyncres_syncres
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+
+<img width="2752" height="914" alt="image" src="https://github.com/user-attachments/assets/60bf76e9-24c0-4110-93c4-a2edeec08f36" />
+<img width="2754" height="1238" alt="image" src="https://github.com/user-attachments/assets/7ce04472-8024-4010-becb-b42a15ce66d1" />
+
+## Interesting optimisations
+<img width="2678" height="1494" alt="image" src="https://github.com/user-attachments/assets/af57d94e-bdc8-4fcf-9c65-e8583e1b9efa" />
+
+
+
+
+
+
+
 
 
 
