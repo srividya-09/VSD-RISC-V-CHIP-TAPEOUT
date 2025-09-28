@@ -21,11 +21,43 @@
 
 ##Liberty format
 
-<img width="2740" height="1596" alt="image" src="https://github.com/user-attachments/assets/7e598e17-771a-41e7-bb15-050811543688" />
+<img width="2744" height="1546" alt="Screenshot 2025-09-28 111753" src="https://github.com/user-attachments/assets/ce01353b-b580-402e-97c2-54d4b956be01" />
+<img width="2750" height="1512" alt="Screenshot 2025-09-28 111857" src="https://github.com/user-attachments/assets/28e965bd-b50a-4a7a-8e1b-b83d24bf4692" />
+<img width="2758" height="1495" alt="Screenshot 2025-09-28 111941" src="https://github.com/user-attachments/assets/26cbadd4-ca4c-41ac-a7ea-3cca77fb8b6f" />
+<img width="2747" height="1507" alt="Screenshot 2025-09-28 114535" src="https://github.com/user-attachments/assets/69fc86c0-c353-4e0a-b469-1912ba62be86" />
 
-<img width="2666" height="1575" alt="image" src="https://github.com/user-attachments/assets/a5be4f6a-23aa-4b99-befe-3ffd53ba08a9" />
+## Hierarchical vs Flat Synthesis (Yosys)
 
-<img width="1894" height="874" alt="image" src="https://github.com/user-attachments/assets/67ac050b-87ae-4f1b-ba44-c9bf7ef055d4" />
+<img width="2737" height="1513" alt="Screenshot 2025-09-28 115313" src="https://github.com/user-attachments/assets/f7e2ef04-6429-4267-b53c-f1234c9f7271" />
+
+### Hierarchical Flow:
+
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_modules.v
+synth -top multiple_modules
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show multiple_modules
+write_verilog -noattr multiple_modules_netlist.v
+
+<img width="2716" height="1524" alt="Screenshot 2025-09-28 115617" src="https://github.com/user-attachments/assets/b48912b8-9a60-4d56-bd44-bb9db7a239f5" />
+<img width="2765" height="1511" alt="Screenshot 2025-09-28 115821" src="https://github.com/user-attachments/assets/49c4513a-0a80-4d3c-ad66-053b0e7e4da8" />
+<img width="2739" height="1510" alt="Screenshot 2025-09-28 120250" src="https://github.com/user-attachments/assets/4e45a992-1343-4a30-b0f3-c25ec0e665e5" />
+
+### Flattened Flow:
+A flat design is a representation where all hierarchical module structures are collapsed into a single level, eliminating submodules and integrating their logic directly into the top-level module.
+
+No submodules are preserved.
+
+flatten
+write_verilog -noattr multiple_modules_flat.v
+
+
+
+
+
+
+
 
 
 
