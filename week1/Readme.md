@@ -266,6 +266,21 @@ show
 <img width="2752" height="1364" alt="image" src="https://github.com/user-attachments/assets/68fc206a-b1d2-4f3a-b9f9-d6e1cdcc215d" />
 
 ### lab2
+<img width="2206" height="688" alt="image" src="https://github.com/user-attachments/assets/e486c428-2f4f-41d4-a0aa-9a26b35adc1f" />
+<img width="2364" height="262" alt="image" src="https://github.com/user-attachments/assets/2daa80a8-641f-4d7e-bc2a-428e207765ab" />
+<img width="2754" height="1034" alt="image" src="https://github.com/user-attachments/assets/4ccaef07-28c7-481c-a8b1-093611da3f6f" />
+
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const2.v
+synth -top dff_const2
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+<img width="2740" height="1270" alt="image" src="https://github.com/user-attachments/assets/d256b8d4-ab0c-4a63-805f-8fd64e8e422d" />
+
+
+
 
 
 
